@@ -1,5 +1,6 @@
+package org.howard.edu.lsp.midterm.question1;
 /**
- * represents a book in a library with attributes like title, author, ISBN, and year published.
+ * represents a book with attributes like title, author, ISBN, and year published.
  */
 public class Book {
     private String title;
@@ -10,10 +11,10 @@ public class Book {
     /**
      * constructs a new book object with the given title, author, ISBN, and year published.
      * 
-     * @param title the title of the book.
-     * @param author the author of the book.
-     * @param ISBN the ISBN number of the book (unique identifier).
-     * @param yearPublished the year the book was published.
+     * @param title the title of the book
+     * @param author the author of the book
+     * @param ISBN the ISBN number of the book (unique identifier)
+     * @param yearPublished the year the book was published
      */
     public Book(String title, String author, String ISBN, int yearPublished) {
         this.title = title;
@@ -22,12 +23,10 @@ public class Book {
         this.yearPublished = yearPublished;
     }
 
-    // getters and setters
-
     /**
      * returns the title of the book.
      * 
-     * @return the title of the book.
+     * @return the title of the book
      */
     public String getTitle() {
         return title;
@@ -36,7 +35,7 @@ public class Book {
     /**
      * sets the title of the book.
      * 
-     * @param title the title of the book.
+     * @param title the title of the book
      */
     public void setTitle(String title) {
         this.title = title;
@@ -45,7 +44,7 @@ public class Book {
     /**
      * returns the author of the book.
      * 
-     * @return the author of the book.
+     * @return the author of the book
      */
     public String getAuthor() {
         return author;
@@ -54,7 +53,7 @@ public class Book {
     /**
      * sets the author of the book.
      * 
-     * @param author the author of the book.
+     * @param author the author of the book
      */
     public void setAuthor(String author) {
         this.author = author;
@@ -63,7 +62,7 @@ public class Book {
     /**
      * returns the ISBN of the book.
      * 
-     * @return the ISBN of the book.
+     * @return the ISBN of the book
      */
     public String getISBN() {
         return ISBN;
@@ -72,7 +71,7 @@ public class Book {
     /**
      * sets the ISBN of the book.
      * 
-     * @param ISBN the ISBN of the book.
+     * @param ISBN the ISBN of the book
      */
     public void setISBN(String ISBN) {
         this.ISBN = ISBN;
@@ -81,7 +80,7 @@ public class Book {
     /**
      * returns the year the book was published.
      * 
-     * @return the year published.
+     * @return the year published
      */
     public int getYearPublished() {
         return yearPublished;
@@ -90,7 +89,7 @@ public class Book {
     /**
      * sets the year the book was published.
      * 
-     * @param yearPublished the year published.
+     * @param yearPublished the year published
      */
     public void setYearPublished(int yearPublished) {
         this.yearPublished = yearPublished;
@@ -99,8 +98,8 @@ public class Book {
     /**
      * compares two book objects based on ISBN and author.
      * 
-     * @param obj the object to compare to.
-     * @return true if the ISBN and author are the same, otherwise false.
+     * @param obj the object to compare to
+     * @return true if the ISBN and author are the same, otherwise false
      */
     @Override
     public boolean equals(Object obj) {
@@ -111,13 +110,13 @@ public class Book {
             return false;
         }
         Book book = (Book) obj;
-        return this.ISBN.equals(book.ISBN) && this.author.equals(book.author);
+        return ISBN.equals(book.ISBN) && author.equals(book.author);
     }
 
     /**
-     * returns a string representaion of the book object.
+     * returns a string representation of the book object.
      * 
-     * @return a string containing the title, author, ISBN, and year published.
+     * @return a string containing the title, author, ISBN, and year published
      */
     @Override
     public String toString() {
