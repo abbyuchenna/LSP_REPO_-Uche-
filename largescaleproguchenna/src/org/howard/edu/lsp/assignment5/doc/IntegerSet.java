@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * the integerset class represnts a collection of unique integers.
- * it provides methods to perform set operatons and manage the integer elemnts.
+ * the integerset clas represnts a collection of unique integers.
+ * it provides methods to perform set oeratons and manage the integer elemnts.
  */
 public class IntegerSet {
     // store the set elements in an ArrayList.
@@ -82,8 +82,8 @@ public class IntegerSet {
     }
 
     /**
-     * adds an item to the set if it is not already present.
-     * @param item the integer to be added to the set.
+     * adds an item to the set if it is not already present
+     * @param item the integer to be added to the set
      */
     public void add(int item) {
         if (!set.contains(item)) {
@@ -101,7 +101,7 @@ public class IntegerSet {
 
     /**
      * performs the union of this set with another set.
-     * @param intSetb the other integerset to union with.
+     * @param intSetb the other integerset to union with
      */
     public void union(IntegerSet intSetb) {
         for (Integer item : intSetb.set) {
@@ -110,7 +110,7 @@ public class IntegerSet {
     }
 
     /**
-     * performs the intersection of this set with another set.
+     * performs the intersection of this set w another set
      * @param intSetb the other integerset to intersect with.
      */
     public void intersect(IntegerSet intSetb) {
@@ -137,7 +137,7 @@ public class IntegerSet {
 
     /**
      * checks if the set is empty.
-     * @return true if the set is empty, false otherwise.
+     * @return true if the set is empty, false otherwise
      */
     public boolean isEmpty() {
         return set.isEmpty();

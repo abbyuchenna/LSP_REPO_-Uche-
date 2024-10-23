@@ -1,8 +1,8 @@
 package org.howard.edu.lsp.assignment5.doc;
 
 /**
- * the driver class is used to test the integerset class.
- * it demostrates the functionality of each method in integerset.
+ * the driver class is used to test the integerset class
+ * it demostrates the functionality of each method in integerset
  */
 public class Driver {
     public static void main(String[] args) {
