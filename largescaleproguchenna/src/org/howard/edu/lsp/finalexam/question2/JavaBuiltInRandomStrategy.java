@@ -21,3 +21,4 @@ public class JavaBuiltInRandomStrategy implements RandomNumberStrategy {
         return Math.abs(random.nextInt());
     }
 }
+//

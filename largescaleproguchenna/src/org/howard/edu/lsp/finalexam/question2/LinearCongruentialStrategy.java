@@ -22,3 +22,4 @@ public class LinearCongruentialStrategy implements RandomNumberStrategy {
         return (int) Math.abs(seed);
     }
 }
+//

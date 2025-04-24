@@ -24,3 +24,5 @@ public class RandomNumberClient {
         System.out.println("Another number using Linear Congruential: " + service.generateRandomNumber());
     }
 }
+
+//

@@ -42,3 +42,4 @@ public class RandomNumberService {
         return strategy.generateRandomNumber();
     }
 }
+//
